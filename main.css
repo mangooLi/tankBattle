@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+#screen{
+	width:1000px;
+	height:700px;
+	border:1px solid red;
+	margin:0 auto;
+	margin-top:25px;
+	position:relative;
+	box-shadow:0 0 80px #573e7e;
+	background-color:#dff0db;
+	overflow:hidden;
+
+}
+
+/*==================================游戏简介块====================*/
+
+
+
+#gameIntroduction,#scoreBoard,#container{
+	position:absolute;
+	height:700px;
+	width:1000px;
+	margin:0 auto;
+	font-family:"Helvetica";
+	
+	
+}
+#gameIntroduction article{
+
+	width:800px;
+	margin:0 auto;
+	margin-top:100px;
+	
+	
+
+
+	
+}
+#gameIntroduction h1{
+	text-align:center;
+	font-size:30px;
+	line-height:40px;
+	height:40px;
+}
+#gameIntroduction h2{
+	
+	font-size:24px;
+
+	
+}
+#gameIntroduction p{
+	text-indent:40px;
+	font-size:20px;
+}
+
+#start{
+	width:200px;
+	height:50px;
+	margin-left:400px;
+	margin-top:80px;
+	font-size:30px;
+	font-weight:bold;
+	background-color:#69c13e;
+}
+
+/*================================游戏简介页面结束========================*/
+
+
+/*=============================游戏画布===============================*/
+
+
+#right{
+	width:800px;
+	
+	margin-left:100px;
+	position:relative;
+	
+}
+
+.canvas{
+	background-color:#ddd;
+	
+}
+/*================================游戏画布结束==================================*/
+
+/*==========================计分板===========================*/
+
+#scoreBoard{
+	background-image:url("images/bg.jpg");
+
+}
+
+#scoreBoard h2{
+	text-align:center;
+	font-size:30px;
+	height:60px;
+	line-height:60px;
+	
+	font-weight:bold;
+	width:200px;
+	margin:0 auto;
+	margin-top:75px;
+	background-color:#fff;
+}
+
+#scoreBoard p{
+	margin-top:20px;
+	margin-left:200px;
+	
+	line-height:50px;
+	font-size:20px;
+	font-weight:bold;
+	width:600px;
+	background-color:#fff;
+
+}
+#scoreBoard strong{
+	margin-left:50px;
+}
+#scoreBoard span{
+	margin-right:50px;
+	float:right;
+}
+#scoreBoard button{
+	height:50px;
+	width:200px;
+	margin:50px 0 0 400px;
+	font-size:30px;
+	font-weight:bold;
+	background-color:#69c13e;
+
+}
+/*=============================计分板结束=====================================*/
+
+.block{
+	display:block;
+}
+.hidden{
+	display:none;
+}
+

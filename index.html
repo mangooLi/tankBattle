@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自制坦克大战</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="screen">
+	<div id="gameIntroduction" class="block">
+		<article>
+			<h1>坦克小战</h1>
+			<h2>游戏简介</h2>
+			<p>本游戏共两关，击毁所有敌方坦克即可通关</p>
+			<p>我方坦克为蓝色。开局时我方有三辆坦克。若用完所有坦克也未能通过，则游戏失败。游戏中敌方坦克有两种，黑色和红色。黑色坦克生命值为1，红色坦克生命值为2。游戏地图中部分区域有墙。<img src="images/others/normalBrick.png">为普通砖块，<img src="images/others/stoneBrick.png">为高级砖块。高级砖块不会被轻易击毁。</p>
+			<p>击毁红色坦克后会随机获得奖品。吃下星星状奖品，则我方坦克为例增加1点，此时能一发击毁红色坦克，能将高级砖块打成普通砖块。枪状奖品能使我方坦克为威力大增，能一发击毁任意墙或者地方坦克。坦克状奖品则能为我方增加一辆坦克</p>
+			<h2>玩法介绍</h2>
+			<p>W、D、S、A键分别控制我方坦克上、右、下、左移动。空格键发射子弹</p>
+		</article>
+		
+		<button id="start">开始游戏</button>
+
+	</div>
+	
+	<div id="container" class="hidden">
+		<!-- <div id="left"></div> -->
+		<div id="right">
+			<!-- <canvas class='canvas' id='can' height="700" width="800"></canvas> -->
+			<canvas class='canvas' id='canvasBuffer' height="700" width="800"></canvas>
+		</div>
+	</div>
+	<div id="scoreBoard" class="hidden">
+		<h2 id="title">计分板</h2>
+		<p><strong>击毁黑色坦克数量：</strong><span class="gameData">11</span></p>
+		<p><strong>击毁红色坦克数量：</strong><span  class="gameData">11</span></p>
+		<p><strong>击毁砖块数量：</strong><span  class="gameData">11</span></p>
+		<p><strong>领取奖励数量：</strong><span class="gameData">11</span></p>
+		<p><strong>本关分数：</strong><span class="gameData">11</span></p>
+		<p><strong>总分数：</strong><span class="gameData">11</span></p>
+		<button id="next">NEXT&gt;&gt;</button>
+	</div>
+	
+	
+</div>
+	
+<script type="text/javascript" src="script/util.js"></script>
+<script type="text/javascript" src="script/const.js"></script>
+
+
+<script type="text/javascript" src="script/wall.js"></script>
+<script type="text/javascript" src="script/bullet.js"></script>
+<script type="text/javascript" src="script/gift.js"></script>
+
+<script type="text/javascript" src="script/blast.js"></script>
+
+
+
+
+<script type="text/javascript" src="script/myTank03.js"></script>
+<script type="text/javascript" src="script/enermyTank.js"></script>
+<script type="text/javascript" src="script/manager.js"></script>
+<script type="text/javascript" src="script/render.js"></script>
+<script type="text/javascript" src="script/main.js"></script>
+
+</body>
+</html>
